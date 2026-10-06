@@ -1,0 +1,26 @@
+model:
+  name: null
+  checkpoint: null
+  adapter_checkpoint: null
+  feature_layers: [2, 5, 8, 11]
+  hidden_dim: 256
+data:
+  dataset: ssa
+  root: null
+  preprocessed_root: null
+  split_file: null
+  split: null
+  index_cache: null
+  native_size: 240
+lora:
+  rank: 8
+  layers: all
+evaluation:
+  batch_size: 16
+  hd95: true
+runtime:
+  device: cuda
+  num_workers: 8
+output:
+  dir: null
+  file: null

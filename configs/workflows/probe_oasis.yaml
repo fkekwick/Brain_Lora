@@ -1,0 +1,22 @@
+model:
+  name: null
+  checkpoint: null
+  adapter_checkpoint: null
+data:
+  dataset: oasis
+  root: null
+  labels_file: null
+  unlabeled_policy: null
+lora:
+  rank: 8
+  layers: all
+probe:
+  batch_size: 64
+  num_slices: 0
+  seeds: [0, 1, 2]
+runtime:
+  device: cuda
+  num_workers: 0
+output:
+  dir: null
+  file: null

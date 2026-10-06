@@ -1,0 +1,6 @@
+model:
+  name: dinov3
+  checkpoint: null
+  adapter_checkpoint: null
+  feature_layers: [2, 5, 8, 11]
+  hidden_dim: 256
